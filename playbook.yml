@@ -1,0 +1,23 @@
+---
+- name: install and start
+  hosts: all
+  tasks:
+   - name: install apache
+     yum:
+      name: httpd
+      state: latest
+   - name: create content
+     copy:
+      src: index.html
+      dest: /var/www/html/first/
+   - name: cerate content
+     copy:
+      src: parallex.css
+      dest: /var/www/html/first/
+   - name: permission
+     command: chmod -R 775 /var/www/html/first
+      
+   - name: run service
+     service:
+      name: httpd
+      state: started

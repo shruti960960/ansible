@@ -1,0 +1,74 @@
+body, html{
+height : 100%;
+margin : 0%;
+font-size : 16px;
+font-weight : 400;
+font-family : 'Lato', sans-serif;
+line-height : 1.8em;
+color : #666;
+									
+									
+}
+.pimg1,.pimg2,.pimg3{
+position : relative ;
+opacity : 0.7;
+background-position : center;
+background-size :cover;
+background-repeat : no-repeat;
+/*
+* 	fixed = parallex
+* 	scroll = normal
+* 			
+* 				*/
+		
+background-attachment : fixed;
+}
+.pimg1{
+background-image : url('https://www.channelfutures.com/files/2019/07/Automation-877x432.jpg');
+min-height : 100%;
+					
+}
+.pimg2{
+background-image : url('https://postpressmag.com/wp-content/uploads/automation.jpg');
+min-height : 400px;
+							
+}
+.pimg3{
+background-image : url('https://kghawes.com/wp-content/uploads/2019/03/rpa_article-rpa-services.jpg');
+min-height : 400px;
+}
+
+.section{
+text-align : center;
+padding : 20px 50px;
+}
+
+.section-light{
+background-color : #f4f4f4;
+color : #666;
+}
+.section-dark{
+background-color : #282e34;
+color : #ddd;
+}
+.text{
+position : absolute;
+top : 50%;																width : 100%;
+																	text-align : center;
+																	color : #000;
+																	font-size : 27px;
+																	letter-spacing : 8px;
+																	text-transform : uppercase;																	}
+
+																	.text .border{
+background-color : #111;
+																
+color : #fff;															
+padding : 20px;																}
+.text .border.trans{
+																	background-color : transparent;													
+}
+																	@media(max-width:568px){
+																	.pimg1,.pimg2,.pimg3{
+background-attachment : scroll;														}
+}
